@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form </title>
+</head>
+
+<body>
+    <H2>Form learning</H2>
+    <form action="backend.php" (we need to put a backend path) method="get">
+        <!-- Fieldset use for form border -->
+        <fieldset>
+            <div>
+                <label for="name">user name:</label>
+                <input type="text" name="user name" id="name">
+            </div>
+            <br>
+            <div>
+                <label for="Discription">Job Discription:</label>
+                <input type="text" name="job Discription" id="Discription">
+            </div>
+            <br>
+            <div>
+                <label for="Email">Email:</label>
+                <input type="email" name="Email" id="Email">
+            </div>
+            <br>
+            <div>
+                <label for="DOB">DOB:</label>
+                <input type="date" name="Date of Birth" id="DOB">
+            </div>
+            <br>
+            <div>
+                <label for="Salary ">Salary:</label>
+                <input type="number" name="Salary" id="Salary">
+            </div>
+            <br>
+            <div>
+                <label for="Drive knowladge">Drive knowladge:</label>
+                <input type="checkbox" name="Drive knowladge" id="Drive knowladge">
+            </div>
+            <br>
+            <div>
+                Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+                Other <input type="radio" name="myGender">
+                <!-- if we put difrent value in name so we can did the multipal selection FYI -->
+            </div>
+            <br>
+            <div>
+                Write about yourself: <textarea name="myText" cols="30" rows="5"></textarea>
+            </div>
+            <br>
+
+            <div>
+                <input type="submit" value="Submit Now">
+                <input type="reset" value="Reset Now">
+            </div>
+
+            
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
