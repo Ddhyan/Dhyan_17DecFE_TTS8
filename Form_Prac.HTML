@@ -10,7 +10,7 @@
 
 <body>
     <H2>Form learning</H2>
-    <form action="backend.php" (we need to put a backend path) method="get">
+    <form action="backend.php" method="post">
         <!-- Fieldset use for form border -->
         <fieldset>
             <div>
@@ -24,7 +24,7 @@
             </div>
             <br>
             <div>
-                <label for="Email">Email:</label>
+                <label for="email">email:</label>
                 <input type="email" name="Email" id="Email">
             </div>
             <br>
@@ -53,13 +53,19 @@
                 Write about yourself: <textarea name="myText" cols="30" rows="5"></textarea>
             </div>
             <br>
+            <div>
+
+                <label for="Document">Document:</label>
+                <input type="file" multiple name="Document" id="Document">
+            </div>
+            <br>
 
             <div>
                 <input type="submit" value="Submit Now">
                 <input type="reset" value="Reset Now">
             </div>
 
-            
+
 
         </fieldset>
     </form>

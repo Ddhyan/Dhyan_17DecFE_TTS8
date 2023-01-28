@@ -1,0 +1,50 @@
+ha have access thyu
+aa 2 services thi wordpress work kare che
+1. apache server 
+2. mysql service( database)
+
+wordpress install karta time tamne database nu name puchyu hase
+
+ama me dd wordpress banavyu 6 
+
+right! etle empty database "dd wordpress" ma badhu configuration kari lidhu n aatla tables banya
+
+me just configuration karyu 6 table nata banaya 
+ama login karu pa6i j wordpress open thatu hatu 
+
+first time install karo wordpress etle e jate confihgure kari aape tamne badhu j including creating database setup, 
+user creation, login
+
+ ok got it 
+now let's see enu file structure
+tame install karyu pchi eni aakhi directory(folder) bani hase. ema aakhu structurevse banyu hase 
+
+aa open karva xampp server no use karyo. So enu folder xampp ma hase. inside htdocs folder ma
+aa folders n files che e default setup ma aavya che
+1. wp-admin => All files of wp-admin. Admin dashboard open thay e badhu ahi thi aave. We never modify anything from this folder.
+2. wp-content -> aapdi website ma je plugins, themes use karie e badhu ahi thi aave. we always interact with this one if koi customisation karvu hoy in theme/plugin.
+ Or we're creating our own theme
+3. wp-includes -> we never touch this!
+from rest files we'll use only one file wp-config.php -> this stores core configurations such as db(Data base) settings. aadat padi jase db ni don't worry
+
+you'll have to read a breif doc how wordpress structure works. but you'll like it without reading and just playing with it
+
+Also,  Remember ::: aNY APPLICATION/WEBSITE'S ENTRY POINT IS INDEX FILE. LIKE INDEX.PHP/INDEX.JS :::
+possible che ema kai pn na hoy, but e tamne application ma entry karavi dese
+
+
+let's see the configuration file first.
+koi pn line "default setup ni file ma" samajvi hoy to mostly eni comment ma samjai jase. na samjay to goole it.
+baki nu hamna ignore karo
+
+xampp is domain or database ?
+xampp is a softwere which creates a local server in your system so that you can run your application with or without databse
+similar softweres : wampp(windows), mamp(MAC), laragon, etc.
+ 
+git commands::
+1. connect currnt folder to git
+- git init
+-git remote add origin "git url"
+- git fetch origin { This will fetch all branches from origin }
+- git branch { list all branches }
+- git checkout 'branchname' { switch to another branch 'brachname' }
