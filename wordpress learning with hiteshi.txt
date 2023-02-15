@@ -48,3 +48,12 @@ git commands::
 - git fetch origin { This will fetch all branches from origin }
 - git branch { list all branches }
 - git checkout 'branchname' { switch to another branch 'brachname' }
+
+
+---------------------------------------------------------------------------------------------------
+---------------------JS-----------------------------------
+js operators
+
+operators : 
+1. == => compaison operators
+x=1, y=2,
