@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    Maths Marks:-<input type="text" name="Maths_Marks" id="Maths_Marks"><br>
+    SST Marks:-<input type="text" name="SST_Marks" id="SST_Marks"><br>
+    Science Marks:-<input type="text" name="Science_Marks" id="Science_Marks"><br>
+    Eng Marks:-<input type="text" name="Eng_Marks" id="Eng_Marks"><br>
+    Guj Marks:-<input type="text" name="Guj_Marks" id="Guj_Marks"><br>
+    <input type="button" name="btn" onclick="Validation()" value="Get Result" id="btn">
+    <div class="result"></div>
     <script>
-        document.write("<center>");
-    for (let i = 1; i <= 30; i++) {
-        for (let a = 1; a <= i; a++) {
-            document.write("<i style='margin-right:15px;height:13px;width:13px;background:red;display: inline-block;'></i>");        
+        //Validation Function Starts
+        function Validation() {
+            var Maths_Marks = (document.getElementById(Maths_Marks).value);
+            var SST_Marks = (document.getElementById(SST_Marks).value);
+            var Science_Marks = (document.getElementById(Science_Marks).value);
+            var Eng_Marks = (document.getElementById(Eng_Marks).value);
+            var Guj_Marks = (document.getElementById(Guj_Marks).value);
+            // var total = Maths_Marks + SST_Marks + Science_Marks + Eng_Marks + Guj_Marks;
+            console.log(result);
+            addition = parseInt(Maths_Marks)+parseInt(SST_Marks)+parent(Science_Marks)+parent(Eng_Marks)+parent(Guj_Marks)
+            console.log(addition);
+            DispDiv = document.getElementsByClassName("result")
+            DispDiv[0].innerHTML = addition 
+            
         }
-        document.write("<br>");
-    }
     </script>
+
 </body>
+
 </html>

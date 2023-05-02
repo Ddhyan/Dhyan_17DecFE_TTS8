@@ -1,65 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-
-        /* p.lorem { font-size:15px; background-color: rgb(226, 176, 101);} */
-        /* styling rule */
-        /* <tag> { css-rules } */
-        /* <tag>.<className> { css-rules } => . is used to select class */ 
-            /* <tag>#<id> { css-rules } =>  # is used to select id*/
-                
-        /* .<className> { css-rules } => all elements/tags with classname will have this css */ 
-        ul.lis2 a.menu{ font-size:40px;}
-        /* ul.lis2 li { font-size: 25px; color: rgb(216, 23, 23);} */
-        div.div-1 {font-size: 25px;}
+      .transformcss {
+        /* transform: matrix(1, 2, 3, 4, 5, 6);
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+        transform: perspective(17px); */
+        /* transform: rotate(0.5turn);
+        transform: rotate3d(1, 2, 3, 10deg);
+        transform: rotateX(10deg);
+        transform: rotateY(10deg);
+        transform: rotateZ(10deg); */
+        /* transform: translate(12px, 50%);
+        transform: translate3d(12px, 50%, 3em);
+        transform: translateX(2em);
+        transform: translateY(3in);
+        transform: translateZ(2px); */
+        /* transform: scale(2, 0.5);
+        transform: scale3d(2.5, 1.2, 0.3);
+        transform: scaleX(2);
+        transform: scaleY(0.5);
+        transform: scaleZ(0.3); */
+        /* transform: skew(30deg, 20deg);
+        transform: skewX(30deg);
+        transform: skewY(1.07rad); */
+      }
+      .box{
+        height: 200px;
+        width: 200px;
+        display: inline-block;
+        background-color: teal;
+      }
     </style>
-</head>
-<body>
-    
-    <ul class="list">
-        <li> <a href="#" class="menu">Test</a> </li>
-        <li> <a href="#">Test</a> </li>
-        <li> <a href="#">Test</a> </li>
-        <li> <a href="#">Test</a> </li> 
-    </ul>
-    <ul class="list1">
-        <li> <a href="#" class="menu">Test</a> </li>
-        <li> <a href="#">Test</a> </li>
-        <li> <a href="#">Test</a> </li>
-        <li> <a href="#">Test</a> </li>
-    </ul>
-    <ul class="lis2">
-        <li> 
-            <a href="#" class="menu">
-                <p>Test</p>
-                <span>whatever</span>
-                <div>whatever div</div>
-                <div class="div-1">whatever div</div>
-            </a>
-        </li> 
-        <li> <a href="#">Test</a> </li>
-        <li> <a href="#">Test</a> </li>
-        <li> <a href="#">Test</a> </li>
-    </ul>
-    <ul>
-        <li> <a href="#">Test</a> </li>
-        <li> <a href="#">Test</a> </li>
-        <li> <a href="#">Test</a> </li>
-        <li> <a href="#">Test</a> </li>
-    </ul>
-    <div class="menu">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae rerum deleniti, earum laborum error quam nemo,<a href="#">laudantium obcaecati quod</a>  <span> <a> font change </a>this is brown text</span> consequatur soluta mollitia, nisi aperiam quisquam at. Cumque dolorem est ab!
-    </div>
+  </head>
+  <body>
+    <div class="box transformcss">
 
-    <p  class="lorem">
-        <strong>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates consequuntur modi saepe unde animi exercitationem esse cum dolorem voluptatum ratione delectus veniam atque praesentium adipisci, dignissimos facilis. <span style="background-color: blue;">Alias voluptate, harum, obcaecati sequi tempora cupiditate nam vero aperiam accusamus sint, est pariatur tenetur autem enim dignissimos libero.</span> Iusto debitis, placeat quos tempore nam voluptate amet ullam iure distinctio, ipsum perspiciatis.
-        </strong>
-    </p>
-</body>
+    </div>
+    <pre>
+
+        /* Keyword values */
+        transform: none;
+    
+        /* Function values */
+        transform: matrix(1, 2, 3, 4, 5, 6);
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+        transform: perspective(17px);
+        transform: rotate(0.5turn);
+        transform: rotate3d(1, 2, 3, 10deg);
+        transform: rotateX(10deg);
+        transform: rotateY(10deg);
+        transform: rotateZ(10deg);
+        transform: translate(12px, 50%);
+        transform: translate3d(12px, 50%, 3em);
+        transform: translateX(2em);
+        transform: translateY(3in);
+        transform: translateZ(2px);
+        transform: scale(2, 0.5);
+        transform: scale3d(2.5, 1.2, 0.3);
+        transform: scaleX(2);
+        transform: scaleY(0.5);
+        transform: scaleZ(0.3);
+        transform: skew(30deg, 20deg);
+        transform: skewX(30deg);
+        transform: skewY(1.07rad);
+    
+        /* Multiple function values */
+        transform: translateX(10px) rotate(10deg) translateY(5px);
+        transform: perspective(500px) translate(10px, 0, 20px) rotateY(3deg);
+    
+        /* Global values */
+        transform: inherit;
+        transform: initial;
+        transform: revert;
+        transform: revert-layer;
+        transform: unset;
+    </pre>
+  </body>
 </html>

@@ -38,3 +38,9 @@ h1.title-wb {
     text-align: center;  
     text-shadow: 5px 6px 10px black;  
 }     
+
+.box{
+    margin: 20px;
+    box-shadow: 10px 20px 15px green;
+}
+text-align

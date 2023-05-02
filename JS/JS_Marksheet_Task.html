@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Maths Marks:-<input type="text" name="Maths_Marks" id="Maths_Marks"><br>
+    SST Marks:-<input type="text" name="SST_Marks" id="SST_Marks"><br>
+    Science Marks:-<input type="text" name="Science_Marks" id="Science_Marks"><br>
+    Eng Marks:-<input type="text" name="Eng_Marks" id="Eng_Marks"><br>
+    Guj Marks:-<input type="text" name="Guj_Marks" id="Guj_Marks"><br>
+    <button onclick="total()" type="button" name="btn" value="get result" id="btn">get result </button>
+    <input onclick="total()" type="button" name="btn2" value="avrage" id="btn2">
+    <div class="result"></div>
+    <div class="avg"></div>
+    <script>
+        // document.getElementById("btn").onclick()
+        function total() {
+            console.log(document.getElementById("Maths_Marks"))
+            var sub1 = parseInt(document.getElementById(Maths_Marks).value);
+            var sub2 = parseInt(document.getElementById(SST_Marks).value);
+            var sub3 = parseInt(document.getElementById(Science_Marks).value);
+            var sub4 = parseInt(document.getElementById(Eng_Marks).value);
+            var sub5 = parseInt(document.getElementById(Guj_Marks).value);
+            
+            if (sub1 > 100 || sub2 > 100 || sub3 > 100 || sub4 > 100 || sub5 > 100) {
+                alert("Please enter Mark in rang of 100");
+            }
+            else {
+                var total = sub1 + sub2 + sub3 + sub4 + sub5
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
