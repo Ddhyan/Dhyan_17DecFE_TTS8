@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 3px;
+        box-sizing: border-box;
+    }
+
+    body {
+        /* background-color: rgb(214, 182, 182); */
+        width: 100%;
+        height: 100%;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<script type="text/javascript">
+    function add(){
+        A=parseInt(Myform.A.value)
+        B=parseInt(Myform.B.value)
+        result=A+B;
+        Myform.result.value=result
+
+    }
+    function Multiply(){
+        A=parseInt(Myform.A.value)
+        B=parseInt(Myform.B.value)
+        result=A*B;
+        Myform.result.value=result
+
+    }
+    function Subtract(){
+        A=parseInt(Myform.A.value)
+        B=parseInt(Myform.B.value)
+        result=A-B;
+        Myform.result.value=result
+
+    }
+
+
+</script>
+
+<body>
+    <form method="get" name="Myform">
+        Value A<input type="text" name="A" id=""> <br><br>
+        Value B<input type="text" name="B" id=""><br><br>
+
+
+
+        <input type="button" name="" value="Add" onclick="add()">
+        <input type="button" name="" value="Multiply" onclick=" Multiply()">
+        <input type="button" name="" value="Subtract" onclick="Subtract()">
+        <input type="reset" name="" value="reset">
+        <br>
+        <br>
+        Output <input type="text" name="result">
+
+    </form>
+</body>
+
+</html>
